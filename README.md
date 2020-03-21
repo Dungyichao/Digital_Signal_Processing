@@ -1,4 +1,4 @@
-# Digital_Signal_Processing
+# Digital Signal Processing on Embedded System
 
 # What do we need
 ### Software
