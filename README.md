@@ -6,4 +6,6 @@
 [https://filehippo.com/download_codeblocks/](https://filehippo.com/download_codeblocks/)
 2. gnuplot:
 [https://sourceforge.net/projects/gnuplot/files/gnuplot/](https://sourceforge.net/projects/gnuplot/files/gnuplot/)
-
+<p align="center">
+<img src="/img/gnuplot_start.JPG" height="80%" width="80%"> 
+</p>  
