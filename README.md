@@ -1,4 +1,7 @@
 # Digital Signal Processing on Embedded System
+A great website for reference: 
+[https://www.dspguide.com/ch1.htm](https://www.dspguide.com/ch1.htm)
+
 
 # 1. What do we need
 ### Software
