@@ -40,7 +40,7 @@ Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and 
 <img src="/img/Modified-Sallen-Key.JPG" height="100%" width="100%"> 
 </p>
 
-The performance comparision is in the following
+The performance comparision is in the following. The Chebyshev optimizes the roll-off, the Butterworth optimizes the passband flatness, and the Bessel optimizes the step response.
 
 <p align="center">
 <img src="/img/analog-filter-compare2.png" height="100%" width="100%"> 
