@@ -43,7 +43,7 @@ Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and 
 The performance comparision is in the following
 
 <p align="center">
-<img src="/img/analog-filter-compare.JPG" height="100%" width="100%"> 
+<img src="/img/analog-filter-compare1.png" height="100%" width="100%"> 
 </p>
 
 The particular op amp use isn't critical, as long as the unity gain frequency is more than 30 to 100 times higher than the filter's cutoff frequency. This is an easy requirement as long as the filter's cutoff frequency is below about 100 kHz.
