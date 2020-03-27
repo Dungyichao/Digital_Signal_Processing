@@ -15,9 +15,11 @@ A great website for reference:
 
 # 2. Basic Knowledge
 All the following summary are reference from the website: https://filehippo.com/download_codeblocks/
+
 <p align="center">
 <img src="/img/DSP_Process.JPG" height="80%" width="80%"> 
 </p>  
+
 ## 2.1 ADC and DAC
 ### 2.1.1 Quantization
 The sample-and-hold (S/H) is required to keep the voltage entering the ADC constant while the conversion is taking place. It is allowed to change only at periodic intervals, at which time it is made identical to the instantaneous value of the input signal. Changes in the input signal that occur between these sampling times are completely ignored. That is, sampling converts the independent variable (time in this example) from continuous to discrete. <br />
