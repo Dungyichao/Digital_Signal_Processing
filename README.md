@@ -40,9 +40,15 @@ Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and 
 <img src="/img/Modified-Sallen-Key.JPG" height="100%" width="100%"> 
 </p>
 
+The performance comparision is in the following
+
+<p align="center">
+<img src="/img/analog-filter-compare.JPG" height="100%" width="100%"> 
+</p>
+
 The particular op amp use isn't critical, as long as the unity gain frequency is more than 30 to 100 times higher than the filter's cutoff frequency. This is an easy requirement as long as the filter's cutoff frequency is below about 100 kHz.
 
-However, integrated circuit is difficult to make resistors directly in silicon, so <b>switched capacitor filter</b> come to rescue.  
+However, integrated circuit is difficult to make resistors directly in silicon, so <b>switched capacitor filter</b> come to the rescue. Notice that, in most systems, the frequency band between about 0.4 and 0.5 of the sampling frequency is an unusable wasteland of filter roll-off and aliased signals.   
 
 
 
