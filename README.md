@@ -26,7 +26,7 @@ The sample-and-hold (S/H) is required to keep the voltage entering the ADC const
 Quantization converts the dependent variable (voltage in this example) from continuous to discrete. Any one sample in the digitized signal can have a maximum error of ±? LSB (Least Significant Bit)
 
 ### 2.1.2 Sampling Theorem
-When a signal input to a system, if we want to know what the signal we get, then we need to do sampling. It will be great if we can get infinite sample, however, that is imposible and waste of resources. According to <b>Nyquist Theorem</b>, the sampling frequency should be two times larger than the maximum frequency of the input signal in order to reconstruct the exact signal (ie. frequencies above one-half the sampling rate are lost) <br />
+The sampling theorem is an analysis of what happens in the frequency domain during digitization. When a signal input to a system, if we want to know what the signal we get, then we need to do sampling. It will be great if we can get infinite sample, however, that is imposible and waste of resources. According to <b>Nyquist Theorem</b>, the sampling frequency should be two times larger than the maximum frequency of the input signal in order to reconstruct the exact signal (ie. frequencies above one-half the sampling rate are lost) <br />
 f_s >= 2*f_max  <br />
 where f_s is sampling frequency and f_max is the maximum frequency of the input signal.
 
