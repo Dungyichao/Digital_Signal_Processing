@@ -52,11 +52,12 @@ However, integrated circuit is difficult to make resistors directly in silicon, 
 
 ### 2.1.5 Multirate data conversion
 There is a strong trend in electronics to replace analog circuitry with digital algorithms. Multirate techniques, using more than one sampling rate in the same system.
+
 #### Deal with input: decimation
+This usually implies lowpass-filtering a signal, then throwing away some of its samples. First, pass the voice signal through a simple RC low-pass filter and sample the data at 64 kHz. The resulting digital data contains the desired voice band between 100 and 3000 hertz, but also has an unusable band between 3 kHz and 32 kHz. Second, remove these unusable frequencies in software, by using a digital low-pass filter at 3 kHz. Third, resample the digital signal from 64 kHz to 8 kHz by simply discarding every seven out of eight samples, a procedure called decimation. The resulting digital data is equivalent to that produced by aggressive analog filtering and direct 8 kHz sampling.
 
-
-### Deal with output: interpolation
-
+#### Deal with output: interpolation
+The 8 kHz data is pulled from memory and converted to a 64 kHz sampling rate, a procedure called interpolation. This involves placing seven samples, with a value of zero, between each of the samples obtained from memory. The resulting signal is a digital impulse train, containing the desired voice band between 100 and 3000 hertz, plus spectral duplications between 3 kHz and 32 kHz. Everything above 3 kHz is then removed with a digital low-pass filter. After conversion to an analog signal through a DAC, a simple RC network is all that is required to produce the final voice signal.
 
 
 
