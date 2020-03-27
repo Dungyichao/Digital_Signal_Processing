@@ -34,11 +34,15 @@ where f_s is sampling frequency and f_max is the maximum frequency of the input 
 Nearly all DACs operate by holding the last value until another sample is received. This is called a <b>zeroth-order hold</b>, the DAC equivalent of the sample-and-hold used during ADC. (A first-order hold is straight lines between the points, a second-order hold uses parabolas, etc.). The zeroth-order hold produces the staircase appearance. However, in the frequency domain, the zeroth-order hold results in high frequency amplitude reduction and will have the shape like sin(πx)/(πx) (called sinc function)
 
 ### 2.1.4 Analog Filters
-Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and Bessel</b>. The complexity of each filter can be adjusted by selecting the number of <b>poles</b>. The more poles in a filter, the more electronics it requires, and the better it performs. The following is a common building block for analog filter design, the <b>modified Sallen-Key circuit</b>.
+Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and Bessel</b>. The complexity of each filter can be adjusted by selecting the number of <b>poles</b>. The more poles in a filter (by cascading the building block showing below), the more electronics it requires, and the better it performs. The following is a common building block for analog filter design, the <b>modified Sallen-Key circuit</b>.
 
 <p align="center">
 <img src="/img/Modified-Sallen-Key.JPG" height="100%" width="100%"> 
 </p>
+
+The particular op amp use isn't critical, as long as the unity gain frequency is more than 30 to 100 times higher than the filter's cutoff frequency. This is an easy requirement as long as the filter's cutoff frequency is below about 100 kHz.
+
+However, integrated circuit is difficult to make resistors directly in silicon, so <b>switched capacitor filter</b> come to rescue.  
 
 
 
