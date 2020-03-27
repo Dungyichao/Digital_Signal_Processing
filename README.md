@@ -50,6 +50,13 @@ The particular op amp use isn't critical, as long as the unity gain frequency is
 
 However, integrated circuit is difficult to make resistors directly in silicon, so <b>switched capacitor filter</b> come to the rescue. Notice that, in most systems, the frequency band between about 0.4 and 0.5 of the sampling frequency is an unusable wasteland of filter roll-off and aliased signals.   
 
+### 2.1.5 Multirate data conversion
+There is a strong trend in electronics to replace analog circuitry with digital algorithms. Multirate techniques, using more than one sampling rate in the same system.
+#### Deal with input: decimation
+
+
+### Deal with output: interpolation
+
 
 
 
