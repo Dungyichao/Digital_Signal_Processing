@@ -37,7 +37,7 @@ Nearly all DACs operate by holding the last value until another sample is receiv
 Three types of analog filters are commonly used: <b>Chebyshev, Butterworth, and Bessel</b>. The complexity of each filter can be adjusted by selecting the number of <b>poles</b>. The more poles in a filter, the more electronics it requires, and the better it performs. The following is a common building block for analog filter design, the <b>modified Sallen-Key circuit</b>.
 
 <p align="center">
-<img src="/img/Modified-Sallen-Key.JPG" height="80%" width="80%"> 
+<img src="/img/Modified-Sallen-Key.JPG" height="100%" width="100%"> 
 </p>
 
 
