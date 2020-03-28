@@ -62,6 +62,9 @@ It is the process of upsampling followed by filtering. Upsampling is the process
 The 8 kHz data is pulled from memory and converted to a 64 kHz sampling rate, a procedure called interpolation. This involves placing seven samples, with a value of zero, between each of the samples obtained from memory. The resulting signal is a digital impulse train, containing the desired voice band between 100 and 3000 hertz, plus spectral duplications between 3 kHz and 32 kHz. Everything above 3 kHz is then removed with a digital low-pass filter. After conversion to an analog signal through a DAC, a simple RC network is all that is required to produce the final voice signal.
 
 ### 2.1.6 Single Bit Data Conversion
+The following is a block diagram of a typical delta modulator. The analog input is a voice signal with an amplitude of a few volts, while the output signal is a stream of digital ones and zeros. A comparator decides which has the greater voltage, the incoming analog signal, or the voltage stored on the capacitor. This decision, in the form of a digital one or zero, is applied to the input of the latch. At each clock pulse, typically at a few hundred kilohertz, the latch transfers whatever digital state appears on its input, to its output. This latch insures that the output is synchronized with the clock, thereby defining the sampling rate. 
+
+If the output is a digital one, the switch connects the capacitor to a positive charge injector which increases the voltage on the capacitor by a fixed amount. If the output is a digital zero, the switch is connected to a negative charge injector. This decreases the voltage on the capacitor by the same fixed amount.
 
 <p align="center">
 <img src="/img/ADC-onebitdataconversion.JPG" height="100%" width="100%"> 
